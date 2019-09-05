@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import Display from './components/Display';
 import Dashboard from './components/Dashboard';
-import useInput from './hooks/useInput';
 
 function App() {
 
