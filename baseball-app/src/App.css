@@ -1,0 +1,30 @@
+
+.App {
+  text-align: center;
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+
+.display-container div {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+.strike-div, .ball-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.display-inner{
+  border: 1px solid black;
+}
