@@ -1,8 +1,6 @@
-import React, { Component, useState, useEffect } from "react";
+import React from "react";
 
 const Dashboard = (props) => {
-
-
     return (
         <div className="dashboard-container">
             <button onClick = {props.addStrike}>Strike</button>
@@ -11,8 +9,6 @@ const Dashboard = (props) => {
             <button onClick = {props.handleHit}>Hit</button>
         </div>
     );
-
-
 }
 
 export default Dashboard;
