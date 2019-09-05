@@ -11,7 +11,10 @@ function App() {
 
   const addStrike = () => {
     if (strikes < 3) { setStrikes(strikes + 1); }
-    else { setStrikes(0) }
+    else { 
+      setStrikes(0);
+      setBalls(0);
+     }
   }
 
   const addBall = () => {

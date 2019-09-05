@@ -29,6 +29,8 @@
 
 .display-inner{
   border: 1px solid black;
+  border-radius: 15px;
+ padding-bottom: 30px;
 }
 
 .dashboard-container{
@@ -37,4 +39,17 @@
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+}
+
+button{
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 30px;
+  background: red;
+  color: white;
+  font-weight: bold;
+}
+
+.title{
+  color: red;
 }
