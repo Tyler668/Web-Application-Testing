@@ -1,6 +1,4 @@
 import React, { Component, useState, useEffect } from "react";
-import ReactDOM from "react-dom";
-import useInput from '../hooks/useInput';
 
 const Dashboard = (props) => {
 
