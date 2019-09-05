@@ -1,6 +1,8 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .display-container {
@@ -27,4 +29,12 @@
 
 .display-inner{
   border: 1px solid black;
+}
+
+.dashboard-container{
+  width: 35%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
