@@ -19,6 +19,10 @@ const Display = (props) => {
                     <h2>Outs</h2>
                     <h3>{props.outs}</h3>
                 </div>
+                <div className="score-div">
+                    <h2>Runs</h2>
+                    <h3>{props.score}</h3>
+                </div>
             </div>
 
         </div>

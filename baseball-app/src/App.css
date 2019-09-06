@@ -22,7 +22,7 @@
   
 }
 
-.strike-div, .ball-div, .out-div{
+.strike-div, .ball-div, .out-div, .score-div{
   display: flex;
   flex-direction: column;
 }

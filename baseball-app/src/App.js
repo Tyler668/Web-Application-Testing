@@ -18,12 +18,14 @@ function App() {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
   const [outs, setOuts] = useState(0);
+  const [score, setScore]  = useState(0);
 
   const addStrike = () => {
     if (strikes < 3) { setStrikes(increment(strikes)); }
     else {
       setStrikes(0);
       setBalls(0);
+      setOuts(outs+1)
     }
   }
 
@@ -32,6 +34,7 @@ function App() {
     else {
       setBalls(reset);
       setStrikes(reset);
+      setScore(score+1)
     }
   }
 
@@ -42,13 +45,13 @@ function App() {
   const handleHit = () => {
     setStrikes(reset);
     setBalls(reset);
+    setScore(score+1)
   }
 
-  // const handleOut = () =>
 
   return (
     <div className="App">
-      <Display strikes={strikes} balls={balls} outs = {outs} />
+      <Display strikes={strikes} balls={balls} outs = {outs} score = {score} />
       <Dashboard addStrike={addStrike} addBall={addBall} handleFoul={handleFoul} handleHit={handleHit} />
     </div>
   );
