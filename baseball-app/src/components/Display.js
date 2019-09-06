@@ -15,6 +15,10 @@ const Display = (props) => {
                     <h2>Balls</h2>
                     <h3>{props.balls}</h3>
                 </div>
+                <div className="out-div">
+                    <h2>Outs</h2>
+                    <h3>{props.outs}</h3>
+                </div>
             </div>
 
         </div>

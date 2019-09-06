@@ -3,20 +3,21 @@ import './App.css';
 import Display from './components/Display';
 import Dashboard from './components/Dashboard';
 
-const increment = (value) => {
+
+export const increment = (value) => {
   return (value + 1);
 }
 
-const reset = () => {
+export const reset = () => {
   return (0);
 }
-
 
 
 function App() {
 
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
+  const [outs, setOuts] = useState(0);
 
   const addStrike = () => {
     if (strikes < 3) { setStrikes(increment(strikes)); }
@@ -43,11 +44,11 @@ function App() {
     setBalls(reset);
   }
 
-
+  // const handleOut = () =>
 
   return (
     <div className="App">
-      <Display strikes={strikes} balls={balls} />
+      <Display strikes={strikes} balls={balls} outs = {outs} />
       <Dashboard addStrike={addStrike} addBall={addBall} handleFoul={handleFoul} handleHit={handleHit} />
     </div>
   );
