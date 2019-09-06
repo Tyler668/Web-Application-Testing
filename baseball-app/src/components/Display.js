@@ -5,7 +5,7 @@ const Display = (props) => {
 
     return (
         <div className="display-container">
-            <h1 className="title">BASEBALL!</h1>
+            <h1 className="title">BASEBALL</h1>
             <div className = "display-inner">
                 <div className="strike-div">
                     <h2>Strikes</h2>
